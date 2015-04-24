@@ -1,1 +1,2 @@
 deactivate_whitewash_tests.patch
+dont_require_lib_files.patch
