@@ -3,7 +3,7 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Cédric Boutillier <boutil@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-minitest, ruby-test-unit, ruby-rr, ruby-nokogiri, ruby-json
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-loofah.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-loofah.git;a=summary
@@ -14,8 +14,7 @@ XS-Ruby-Versions: all
 Package: ruby-loofah
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# nokogiri (>= 1.5.9), rdoc (~> 4.0, development), rake (>= 0.8, development), minitest (~> 2.2, development), rr (~> 1.1.0, development), json (>= 0, development), hoe-gemspec (>= 0, development), hoe-debugging (>= 0, development), hoe-bundler (>= 0, development), hoe-git (>= 0, development), hoe (~> 3.11, development)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-nokogiri
 Description: manipulation and transformation of HTML/XML documents and fragments
  Loofah is a general library for manipulating and transforming HTML/XML
  documents and fragments. It's built on top of Nokogiri and libxml2, so
