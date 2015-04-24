@@ -1,0 +1,5 @@
+ruby-loofah (2.0.1-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Cedric Boutillier <boutil@losange.losange.org>  Fri, 24 Apr 2015 13:42:36 +0200

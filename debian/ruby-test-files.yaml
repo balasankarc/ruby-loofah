@@ -1,0 +1,12 @@
+---
+- test/html5/test_sanitizer.rb
+- test/unit/test_helpers.rb
+- test/unit/test_scrubbers.rb
+- test/unit/test_scrubber.rb
+- test/unit/test_encoding.rb
+- test/unit/test_api.rb
+- test/integration/test_helpers.rb
+- test/integration/test_xml.rb
+- test/integration/test_ad_hoc.rb
+- test/integration/test_scrubbers.rb
+- test/integration/test_html.rb
