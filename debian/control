@@ -2,7 +2,7 @@ Source: ruby-loofah
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders: Cédric Boutillier <boutil@debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>, Balasankar C <balasankarc@autistici.org>
 Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-minitest, ruby-test-unit, ruby-rr, ruby-nokogiri, ruby-json
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-loofah.git

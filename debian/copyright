@@ -9,6 +9,7 @@ License: Expat
 
 Files: debian/*
 Copyright: 2015 Cédric Boutillier <boutil@debian.org>
+           2015 Balasankar C <balasankarc@autistici.org>
 License: Expat
 Comment: the Debian packaging is licensed under the same terms as the original package.
 
