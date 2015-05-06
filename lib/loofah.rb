@@ -27,7 +27,7 @@ require 'loofah/html/document_fragment'
 #
 module Loofah
   # The version of Loofah you are using
-  VERSION = '2.0.1'
+  VERSION = '2.0.2'
 
   class << self
     # Shortcut for Loofah::HTML::Document.parse
@@ -74,5 +74,9 @@ module Loofah
       Loofah.xml_document(string_or_io).scrub!(method)
     end
 
+    # A helper to remove extraneous whitespace from text-ified HTML
+    def remove_extraneous_whitespace(string)
+      string.gsub(/\n\s*\n\s*\n/,"\n\n")
+    end
   end
 end
