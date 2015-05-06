@@ -1,6 +1,9 @@
 ruby-loofah (2.0.2-1) unstable; urgency=medium
 
   * Upstream update (Closes: #784393)
+  * Add myself to uploaders
+  * Delete deactivate_whitewash_tests.patch, not needed anymore (tests fixed
+    upstream)
 
  -- Balasankar C <balasankarc@autistici.org>  Wed, 06 May 2015 09:08:49 +0530
 
