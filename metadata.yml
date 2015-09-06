@@ -1,0 +1,256 @@
+--- !ruby/object:Gem::Specification
+name: loofah
+version: !ruby/object:Gem::Version
+  version: 2.0.3
+platform: ruby
+authors:
+- Mike Dalessio
+- Bryan Helmkamp
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2015-08-17 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: nokogiri
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 1.5.9
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 1.5.9
+- !ruby/object:Gem::Dependency
+  name: rdoc
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '4.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '4.0'
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0.8'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0.8'
+- !ruby/object:Gem::Dependency
+  name: minitest
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.2'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.2'
+- !ruby/object:Gem::Dependency
+  name: rr
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 1.1.0
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 1.1.0
+- !ruby/object:Gem::Dependency
+  name: json
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: hoe-gemspec
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: hoe-debugging
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: hoe-bundler
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: hoe-git
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: hoe
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.13'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.13'
+description: |-
+  Loofah is a general library for manipulating and transforming HTML/XML
+  documents and fragments. It's built on top of Nokogiri and libxml2, so
+  it's fast and has a nice API.
+
+  Loofah excels at HTML sanitization (XSS prevention). It includes some
+  nice HTML sanitizers, which are based on HTML5lib's whitelist, so it
+  most likely won't make your codes less secure. (These statements have
+  not been evaluated by Netexperts.)
+
+  ActiveRecord extensions for sanitization are available in the
+  `loofah-activerecord` gem (see
+  https://github.com/flavorjones/loofah-activerecord).
+email:
+- mike.dalessio@gmail.com
+- bryan@brynary.com
+executables: []
+extensions: []
+extra_rdoc_files:
+- CHANGELOG.rdoc
+- MIT-LICENSE.txt
+- Manifest.txt
+- README.rdoc
+files:
+- ".gemtest"
+- CHANGELOG.rdoc
+- Gemfile
+- MIT-LICENSE.txt
+- Manifest.txt
+- README.rdoc
+- Rakefile
+- benchmark/benchmark.rb
+- benchmark/fragment.html
+- benchmark/helper.rb
+- benchmark/www.slashdot.com.html
+- lib/loofah.rb
+- lib/loofah/elements.rb
+- lib/loofah/helpers.rb
+- lib/loofah/html/document.rb
+- lib/loofah/html/document_fragment.rb
+- lib/loofah/html5/scrub.rb
+- lib/loofah/html5/whitelist.rb
+- lib/loofah/instance_methods.rb
+- lib/loofah/metahelpers.rb
+- lib/loofah/scrubber.rb
+- lib/loofah/scrubbers.rb
+- lib/loofah/xml/document.rb
+- lib/loofah/xml/document_fragment.rb
+- test/assets/testdata_sanitizer_tests1.dat
+- test/helper.rb
+- test/html5/test_sanitizer.rb
+- test/integration/test_ad_hoc.rb
+- test/integration/test_helpers.rb
+- test/integration/test_html.rb
+- test/integration/test_scrubbers.rb
+- test/integration/test_xml.rb
+- test/unit/test_api.rb
+- test/unit/test_encoding.rb
+- test/unit/test_helpers.rb
+- test/unit/test_scrubber.rb
+- test/unit/test_scrubbers.rb
+homepage: https://github.com/flavorjones/loofah
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options:
+- "--main"
+- README.rdoc
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.6
+signing_key: 
+specification_version: 4
+summary: Loofah is a general library for manipulating and transforming HTML/XML documents
+  and fragments
+test_files: []
