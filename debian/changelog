@@ -1,3 +1,10 @@
+ruby-loofah (2.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper compatibility to 9.
+
+ -- Balasankar C <balasankarc@autistici.org>  Sun, 06 Sep 2015 13:22:57 +0530
+
 ruby-loofah (2.0.2-1) unstable; urgency=medium
 
   * Upstream update (Closes: #784393)
