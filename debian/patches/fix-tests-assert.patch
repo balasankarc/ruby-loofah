@@ -1,0 +1,19 @@
+Description: Tweak tests to match upstream libxml2
+ Upstream nokogiri uses a patched libxml2 library. So, to match with it, the
+ test has been patched. The test will not run as intended by the upstream, but
+ it satisfies the concept.
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2016-01-07
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/test/assets/testdata_sanitizer_tests1.dat
++++ b/test/assets/testdata_sanitizer_tests1.dat
+@@ -345,7 +345,7 @@
+     "name": "should_sanitize_script_tag_with_multiple_open_brackets",
+     "input": "<<script>alert(\"XSS\");//<</script>",
+     "output": "alert(\"XSS\");//",
+-    "rexml": "Ill-formed XHTML!"
++    "rexml": "&lt;&lt;script&gt;alert('XSS');//&lt;&lt;/script&gt;"
+   },
+ 
+   {
