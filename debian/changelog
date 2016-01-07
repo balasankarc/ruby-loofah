@@ -1,3 +1,9 @@
+ruby-loofah (2.0.3-2) unstable; urgency=medium
+
+  * fix-tests-assert.patch: Patch to fix test failures (Closes: #808449) 
+
+ -- Balasankar C <balasankarc@autistici.org>  Thu, 07 Jan 2016 18:51:50 +0530
+
 ruby-loofah (2.0.3-1) unstable; urgency=medium
 
   * New upstream release.
